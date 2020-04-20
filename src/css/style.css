@@ -45,6 +45,8 @@
        flex-wrap: wrap;
    }
 
+  
+
       
    .card {
     display: grid;
@@ -82,13 +84,41 @@
     
   }
 
-   #image1{
-    background: url("../assets/covid_sp.jpg");
+  #card-arc {
+    display: flex;
+    flex-direction: row;
+    
+   }
+
+  .card-about-me {
+    display: grid;
+    grid-template-columns: 350px ;
+    grid-template-rows: 310px ;
+    grid-template-areas: "image" ;
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+  }
+  .card-image-about-me {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     
   }
 
-  #image1, div#image2, div#image3 , div#image4, div#image5 , div#image6 {
+  section
+
+   
+
+  #image1, div#image2, div#image3 , div#image4, div#image5 , div#image6, div#image7, div#image8, div#image9 {
     background-size: cover;
+  }
+
+  #image1{
+    background: url("../assets/covid_sp.jpg");
+    
   }
 
   #image2{
@@ -109,6 +139,20 @@
 
   #image6{
     background: url("../assets/o-monstro.jpg");
+  }
+
+  #image7{
+    background: url("../assets/profile.jpg");
+  }
+
+  #image8{
+    background: url("../assets/linkedin.webp");
+    width: 180px;
+  }
+
+  #image9{
+    background: url("../assets/github-logo.png");
+    width: 180px;
   }
 
   .card-text {
@@ -158,8 +202,9 @@
     margin:30px;
   }
   form{
-      padding-top: 15px;
+      padding-top: 10px;
       width: max-content;
+      margin: 30px;
   }
 
   form h2{
@@ -220,3 +265,27 @@
       text-align: center;
 
   }
+
+  section #about-me{
+      display: grid;
+      grid-template-columns: 200px;
+      grid-template-rows: repeat(2,1fr);
+  }
+
+  #about-me h2{
+      margin-left: 700px;
+    
+  }
+
+  .image-linkedin{
+      margin-left: 700px;
+      
+
+  }
+
+  .image-github{
+    margin-left: 800px;
+    margin-top: -55px;
+  }
+
+ 
