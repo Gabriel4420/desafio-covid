@@ -1,0 +1,222 @@
+   *{
+    font-family: 'Roboto', sans-serif;
+   }
+   
+   body{
+       background-image: repeating-radial-gradient(darkred,black);
+       color: whitesmoke;
+   }
+
+   #title{
+       text-align: center;
+       font-size: xx-large;
+       color: rgb(255, 0, 0);
+   }
+
+   header ul{
+       list-style-type: none;
+       
+   }
+
+   header ul li{
+    display: inline;
+    padding: 15px;
+    
+   }
+
+   header ul li:hover{
+    background-image: repeating-radial-gradient(black,darkblue);
+    border-radius: 20px;
+   }
+
+   header ul li a{
+       text-decoration: none;
+       color: whitesmoke;
+   }
+
+   header ul li a:hover{
+       color: blue;
+       transition: all 0.9s;
+   }
+   
+   main{
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+   }
+
+      
+   .card {
+    display: grid;
+    grid-template-columns: 350px ;
+    grid-template-rows: 210px 300px 80px ;
+    grid-template-areas: "image" "text" "stats";
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+  }
+
+  .card-image {
+    grid-area: image;
+  }
+  .card-text {
+    grid-area: text;
+    margin: 10px;
+    
+  }
+
+  .card-text h2{
+      font-size: medium;
+      text-align: center;
+  }
+  .card-stats {
+    grid-area: stats; 
+  }
+
+  .card-image {
+    grid-area: image;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    
+  }
+
+   #image1{
+    background: url("../assets/covid_sp.jpg");
+    
+  }
+
+  #image1, div#image2, div#image3 , div#image4, div#image5 , div#image6 {
+    background-size: cover;
+  }
+
+  #image2{
+    background: url("../assets/corona.jpeg");
+  }
+
+  #image3{
+    background: url("../assets/euro_covid.jpg");
+  }
+
+  #image4{
+    background: url("../assets/china_covid.jpg");
+  }
+
+  #image5{
+    background: url("../assets/monkey.jpg");
+  }
+
+  #image6{
+    background: url("../assets/o-monstro.jpg");
+  }
+
+  .card-text {
+    grid-area: text;
+  }
+  .card-text .date {
+    color: rgb(255, 7, 110);
+    font-size:13px;
+  }
+  .card-text p {
+    color: grey;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-text h2 {
+    margin-top:0px;
+    font-size:28px;
+    color: black;
+  }
+
+  .card-stats {
+    grid-area: stats; 
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: rgb(243, 114, 114);
+  }
+
+  .card-stats .stat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  padding:5px;
+}
+
+.card:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+  .card {
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  }
+  form{
+      padding-top: 15px;
+      width: max-content;
+  }
+
+  form h2{
+      text-align: center;
+  }
+
+  form label#label-name, label#label-email{
+      font-size: 20px;
+      font-family: roboto;
+  }
+
+  form label#label-name{
+    position: relative;
+    top: -15px;
+  }
+
+  form label#label-email{
+    position: relative;
+    top: 0px;
+  }
+
+
+  form input {
+      position: relative;
+      top: 5px;
+      outline: none;
+      display: block;
+      padding: 10px;
+      border-radius: 30px;
+      min-width: 480px;
+  }
+
+  textarea{
+    border-radius: 10px;
+    min-width: 500px;
+    resize: vertical;
+    outline: none;
+  }
+
+  button{
+    font-size:large;
+    background-color: transparent;
+    color: rgb(216, 111, 111);
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 15px;
+
+  }
+
+  button:hover{
+    
+    color: white;
+    transition: all 0.9s;
+  }
+
+  footer{
+      text-align: center;
+
+  }
