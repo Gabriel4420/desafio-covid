@@ -281,7 +281,7 @@
 
   textarea{
     border-radius: 10px;
-    min-width: 500px;
+    min-width: 100px;
     resize: vertical;
     outline: none;
   }
