@@ -251,7 +251,7 @@
   }
 
   form label#label-name, label#label-email{
-      font-size: 10px;
+      font-size: 20px;
       font-family: roboto;
   }
 
@@ -273,7 +273,7 @@
       display: block;
       padding: 5px;
       border-radius: 30px;
-      min-width: 180px;
+      min-width: 250px;
   }
   
   
@@ -281,7 +281,7 @@
 
   textarea{
     border-radius: 10px;
-    min-width: 100px;
+    min-width: 250px;
     resize: vertical;
     outline: none;
   }
@@ -293,7 +293,7 @@
     border: none;
     border-radius: 5px;
     width: 100%;
-    padding: 15px;
+    padding: 5px;
 
   }
 
