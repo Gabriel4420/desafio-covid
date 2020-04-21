@@ -212,7 +212,7 @@
       text-align: center;
   }
 
-  form label#label-name, label#label-email{
+  form label#label-name, label#label-email, label#label-message{
       font-size: 20px;
       font-family: roboto;
   }
@@ -227,6 +227,11 @@
     top: 0px;
   }
 
+  form label#label-message{
+    position: relative;
+    top: 0px;
+    left: 150px;
+  }
 
   form input {
       position: relative;
@@ -258,21 +263,28 @@
       padding-bottom: 50px;
   }
 
-  form label#label-name, label#label-email{
-      font-size: 20px;
-      font-family: roboto;
-  }
+  form label#label-name, label#label-email, label#label-message{
+    font-size: 20px;
+    font-family: roboto;
+}
 
-  form label#label-name{
-    position: relative;
-    top: -15px;
-  }
+form label#label-name{
+  position: relative;
+  top: -15px;
+  left: 90px;
+}
 
-  form label#label-email{
-    position: relative;
-    top: 0px;
-  }
+form label#label-email{
+  position: relative;
+  top: 0px;
+  left: 90px;
+}
 
+form label#label-message{
+  position: relative;
+  top: 0px;
+  left: 90px;
+}
 
   form input {
       position: relative;
