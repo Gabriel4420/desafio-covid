@@ -238,6 +238,13 @@
       min-width: 480px;
   }
 
+  textarea{
+    border-radius: 10px;
+    min-width: 490px;
+    resize: vertical;
+    outline: none;
+  }
+
   @media only screen and (max-width: 600px) {
     form{
       padding-top: 10px;
@@ -248,6 +255,7 @@
 
   form h2{
       text-align: center;
+      padding-bottom: 50px;
   }
 
   form label#label-name, label#label-email{
@@ -275,16 +283,16 @@
       border-radius: 30px;
       min-width: 340px;
   }
-  
-  
-  }
 
   textarea{
     border-radius: 10px;
     min-width: 350px;
     resize: vertical;
     outline: none;
+  }  
+  
   }
+
 
   button{
     font-size:large;
