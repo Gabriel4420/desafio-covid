@@ -238,6 +238,47 @@
       min-width: 480px;
   }
 
+  @media only screen and (max-width: 600px) {
+    form{
+      padding-top: 10px;
+      width: max-content;
+      margin: 30px;
+      padding-left: 10px;
+    }
+
+  form h2{
+      text-align: center;
+  }
+
+  form label#label-name, label#label-email{
+      font-size: 10px;
+      font-family: roboto;
+  }
+
+  form label#label-name{
+    position: relative;
+    top: -15px;
+  }
+
+  form label#label-email{
+    position: relative;
+    top: 0px;
+  }
+
+
+  form input {
+      position: relative;
+      top: 5px;
+      outline: none;
+      display: block;
+      padding: 5px;
+      border-radius: 30px;
+      min-width: 180px;
+  }
+  
+  
+  }
+
   textarea{
     border-radius: 10px;
     min-width: 500px;
